@@ -1,0 +1,32 @@
+{
+  "name": "davimo/importer-objects",
+  "description": "Bundle that set the selected grid columns automatically when importing a data object",
+  "type": "pimcore-bundle",
+  "version": "0.0.1",
+  "require": {
+    "php": ">=7.1",
+    "pimcore/core-version": ">=5.1.0",
+    "pimcore/pimcore": "5.5.*",
+    "pimcore/output-data-config-toolkit-bundle": "^2.2"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Davi Menezes",
+      "email": "davimenezesoliveira@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "OutputDataConfigToolkitBundle\\": ["/"],
+      "ImporterObjectBundle\\": "/"
+    }
+  },
+  "extra": {
+    "pimcore": {
+      "bundles": [
+        "ImporterObjectBundle\\ImporterObjectBundle"
+      ]
+    }
+  }
+}
