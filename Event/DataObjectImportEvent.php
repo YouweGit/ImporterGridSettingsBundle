@@ -41,7 +41,7 @@ class DataObjectImportEvent extends Event
     }
 
     /**
-     * @return mixed
+     * @return Response
      */
     public function getResponse(): Response
     {

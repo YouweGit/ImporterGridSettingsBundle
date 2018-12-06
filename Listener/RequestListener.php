@@ -17,6 +17,9 @@ class RequestListener
 
     const IMPORT_CONFIG_PARAMETER = "importConfigId";
 
+    /**
+     * @param FilterResponseEvent $event
+     */
     public function onKernelResponse(FilterResponseEvent $event)
     {
         if (strpos($event->getRequest()->getPathInfo(), $this::IMPORT_FILE_URL) !== false
