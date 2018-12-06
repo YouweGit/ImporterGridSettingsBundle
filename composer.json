@@ -1,5 +1,5 @@
 {
-  "name": "davi-mo/ImporterObjectBundle",
+  "name": "YouweGit/ImporterObjectBundle",
   "description": "Bundle that set the selected grid columns automatically when importing a data object",
   "type": "pimcore-bundle",
   "version": "0.0.1",
@@ -9,7 +9,7 @@
     "pimcore/pimcore": "5.5.*",
     "pimcore/output-data-config-toolkit-bundle": "^2.2"
   },
-  "license": "MIT",
+  "license": "gpl-3.0",
   "authors": [
     {
       "name": "Davi Menezes",

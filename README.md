@@ -3,7 +3,7 @@ The importer object bundle is a pimcore bundle that set the selected grid column
 
 ## Installation
 The installation can be installed through composer. 
-1. Run ``composer require davi-mo/ImporterObjectBundle`` to receive the bundle.
+1. Run ``composer require YouweGit/ImporterObjectBundle`` to receive the bundle.
 2. Enable the bundle ``bin/console pimcore:bundle:enable ImporterObjectBundle``.
 3. Then reload the GUI of Pimcore. 
 
