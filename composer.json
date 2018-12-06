@@ -1,5 +1,5 @@
 {
-  "name": "davimo/importer-objects",
+  "name": "davi-mo/ImporterDataObject",
   "description": "Bundle that set the selected grid columns automatically when importing a data object",
   "type": "pimcore-bundle",
   "version": "0.0.1",
