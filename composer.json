@@ -2,7 +2,6 @@
   "name": "youwe/importer-grid-settings",
   "description": "Bundle that set the selected grid columns automatically when importing a data object",
   "type": "pimcore-bundle",
-  "version": "0.0.1",
   "require": {
     "php": ">=7.1",
     "pimcore/core-version": ">=5.1.0",
