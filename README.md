@@ -8,4 +8,4 @@ The installation can be installed through composer.
 3. Then reload the GUI of Pimcore. 
 
 ## How does it work?
-The working is quite simple; when you are importing a CSV file, the bundle will set up the grid automatically according to the data object that you're importing.
+The working is quite simple; when you are importing a CSV file, the bundle will set up the grid automatically according to the headers of the CSV you're importing.
