@@ -36,17 +36,14 @@ class DataObjectImportListener
         // It's only needed the header
         foreach ($data->config->dataPreview[0] as $item => $value) {
             if ($value === 'id') {
-                $fields[] = [
-                    'isOperator' => true,
-                    'attributes' => [
-                        'type' => "operator",
-                        'class' => "Ignore",
-                        'isOperator' => true,
-                        'childs' => []
-                    ]
-                ];
+                $fields[] = $this->setIgnoreGridColumns();
             } elseif ($item !== 'rowId') {
-                $fields[] = $this->setGridColumns($classDefinition, $value);
+                $columns = $this->setGridColumns($classDefinition, $value);
+                if (empty($columns)) {
+                    $columns = $this->setIgnoreGridColumns();
+                }
+
+                $fields[] = $columns;
             }
         }
 
@@ -85,5 +82,21 @@ class DataObjectImportListener
         }
 
         return $data;
+    }
+
+    /**
+     * @return array
+     */
+    private function setIgnoreGridColumns(): array
+    {
+        return [
+            'isOperator' => true,
+            'attributes' => [
+                'type' => "operator",
+                'class' => "Ignore",
+                'isOperator' => true,
+                'childs' => []
+            ]
+        ];
     }
 }
